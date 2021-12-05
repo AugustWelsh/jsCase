@@ -75,3 +75,14 @@
    //     toDoContainer.removeChild(paragraph);
    // })
 //})
+
+//https://www.geeksforgeeks.org/how-to-create-todo-app-using-html-css-js-and-bootstrap/
+
+let addTodo = document.getElementById('containerChild')
+let toDoContainer = document.getElementById('containerChild')
+let input = document.getElementById('textInput')
+var newParagraph = document.createElement('li')
+
+
+
+
