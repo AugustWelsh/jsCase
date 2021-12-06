@@ -1,0 +1,59 @@
+.body, html{
+    background-color: gray;
+   
+}
+.wrapper{
+    margin: 120px, auto;
+    width: auto;
+    flex: auto;
+   
+    
+    background: burlywood;
+    border-radius: 8px;
+    padding: 30px;
+    
+  
+
+    
+
+}
+
+.container{
+   
+    text-align: center;
+    border: black, solid, 3px;
+    color: blue;
+}
+h1{
+    text-align: center;
+}
+
+#inputArea{
+    border-radius: 3px;
+    border: 2px;
+
+}
+#toDoContainer{
+    border: solid, 2px;
+    background-color: indigo;
+    margin: 20px;
+    border-radius: 8px;
+    border: black, solid, 2px;
+    
+   display: flex; 
+   flex-direction: column;
+}
+input{
+    border-radius: 3px;
+    border: solid, black, 1px;
+    margin-right: 5px;
+}
+.paragraph-styling{
+    border: solid, 2px, black;
+   
+}
+.p{
+    border: solid, 2px;
+   
+}
+
