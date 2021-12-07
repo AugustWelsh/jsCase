@@ -62,27 +62,38 @@
 //let toDoContainer = document.getElementById('toDoListContainer');
 //let inputField = document.getElementById('inputArea');
 
-//addToDoButton.addEventListener('click', function(){
-    //var paragraph = document.createElement('p');
-    //paragraph.classList.add('paragraph-styling');
-    //paragraph.innerText = inputField.value;
-    //toDoContainer.appendChild(paragraph);
-    //inputField.value = "";
-   // paragraph.addEventListener('click', function(){
-   //     paragraph.style.textDecoration = "line-through";
-   // })
-    //paragraph.addEventListener('dblclick', function(){
-   //     toDoContainer.removeChild(paragraph);
-   // })
-//})
+
 
 //https://www.geeksforgeeks.org/how-to-create-todo-app-using-html-css-js-and-bootstrap/
 
-let addTodo = document.getElementById('containerChild')
-let toDoContainer = document.getElementById('containerChild')
-let input = document.getElementById('textInput')
-var newParagraph = document.createElement('li')
+function playMyAudio(){
+  document.getElementById("myAudio").play();
+}
+var addToDoButton = document.getElementById('addToDo');
 
 
 
+addToDoButton.addEventListener('click', function(){
+  var paragraph = document.createElement('p');
 
+
+  paragraph.classList.add('paragraph-styling');
+ 
+  paragraph.innerText = inputField.value;
+  toDoContainer.appendChild(paragraph);
+  inputField.value = "";
+  paragraph.addEventListener('click', function(){
+      paragraph.style.textDecoration = "underline";
+  })
+  paragraph.addEventListener('click', function(){
+    paragraph.style.color = "Red";
+  })
+  
+  paragraph.addEventListener('dblclick', function(){
+      toDoContainer.removeChild(paragraph);
+      
+      
+  })
+
+
+})

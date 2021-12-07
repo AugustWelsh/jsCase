@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsCase</title>
+    <link rel="stylesheet" href="jsCase.css">
 </head>
 <body>
-    <div class="mainContainer">
-        <input type="text" id="inputArea">
-        <button id="addList">+</button>
-    </div>
-
-    <script src="jsCase.js"></script>
+    <audio src="gtaShit.mp3" id="myAudio"></audio>
+    <div class="wrapper">
+        <h1>To Do List</h1>
+        <div class="container">
+            <input id="inputField" type="text" maxlength="30"><button onclick="playAudio()" type="button" id="addToDo">+</button>
+            
+            <div class="to-dos" id="toDoContainer">
+            </div>
+        </div>
+        <script src="jsCase.js"></script>
 </body>
 </html>
