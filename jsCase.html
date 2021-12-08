@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="jsCase.css">
 </head>
 <body>
-    <audio src="gtaShit.mp3" id="myAudio"></audio>
+    <audio id="myAudio">
+    <source src="gtaShit.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="myAudio2">
+        <source src="SUIII.mp3" type="audio/mpeg">
+      </audio>
+
     <div class="wrapper">
         <h1>To Do List</h1>
         <div class="container">
-            <input id="inputField" type="text" maxlength="30"><button onclick="playAudio()" type="button" id="addToDo">+</button>
+            <input id="inputField" placeholder="Add Task..." type="text" maxlength="30"><button onclick="playAudio()" type="button" type="button" id="addToDo">+</button>
             
-            <div class="to-dos" id="toDoContainer">
-            </div>
+            <input id="inputbtn" type="button" value="Remove All" onclick="removeAll()">
+
+            <ul class="to-dos" id="toDoContainer">
+              
+            </ul>
         </div>
         <script src="jsCase.js"></script>
 </body>
